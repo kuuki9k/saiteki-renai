@@ -1,0 +1,526 @@
+[
+  {
+    "id": "cool_000",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "夜。部屋に一人。",
+      "FATESの申告フォームを、もう一度だけ開いた。",
+      "",
+      "候補者の欄に、名前がある。",
+      "——{神崎 湊|かんざき みなと}。75%。",
+      "",
+      "画面をしばらく見つめた。",
+      "それから——送信ボタンに、指を置いた。",
+      "",
+      "迷いは、なかった。"
+    ],
+    "effect": "fade_in",
+    "auto_next": "cool_001",
+    "choices": []
+  },
+  {
+    "id": "cool_001",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESは、私と{神崎 湊|かんざき みなと}の相性を\n75%と算出した。",
+      "",
+      "「誤差の範囲内」——湊はそう言うかもしれない。",
+      "でも、私はその誤差に引き寄せられていた。"
+    ],
+    "effect": null,
+    "auto_next": "cool_002",
+    "choices": []
+  },
+  {
+    "id": "cool_002",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「——また、残業か」",
+      "",
+      "資料室に入ると、湊がデータを眺めていた。",
+      "視線を上げもせずに言う。"
+    ],
+    "effect": null,
+    "auto_next": "cool_003",
+    "choices": []
+  },
+  {
+    "id": "cool_003",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「75%という数字。……気になるか？」",
+      "",
+      "「FATESの算出は、過去のデータに基づく統計モデルだ。",
+      "　個人の感情値は、変数として扱われていない。",
+      "　つまり——75%は、『この程度で十分』という意味じゃない」"
+    ],
+    "effect": null,
+    "auto_next": "cool_004",
+    "choices": []
+  },
+  {
+    "id": "cool_004",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「……どういう意味ですか？」",
+      "",
+      "湊がようやく顔を上げた。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「感情値って、なんですか？」",
+        "next_scene": "cool_005a",
+        "effects": [
+          { "type": "affection", "target": "cool", "value": 2, "op": "add" }
+        ]
+      },
+      {
+        "label": "「じゃあ、75%は何の意味があるの？」",
+        "next_scene": "cool_005b",
+        "effects": [
+          { "type": "affection", "target": "cool", "value": 3, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cool_005a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「FATESのモデルに組み込まれていない変数のことだ。",
+      "　感情——たとえば、会いたいとか、苦しいとか、そういうもの。",
+      "　統計では、測れない」"
+    ],
+    "effect": null,
+    "auto_next": "cool_006",
+    "choices": []
+  },
+  {
+    "id": "cool_005b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……75%は、過去のデータから見て「この二人は高確率で安定する」という予測だ。",
+      "　だが——予測は、結果じゃない。",
+      "　感情という誤差が、それを変える可能性がある」"
+    ],
+    "effect": null,
+    "auto_next": "cool_006",
+    "choices": []
+  },
+  {
+    "id": "cool_006",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「俺はその感情値を——測ろうとしてきた。",
+      "　ずっと。",
+      "　でも——まだ、測れていない」"
+    ],
+    "effect": null,
+    "auto_next": "cool_007",
+    "choices": []
+  },
+  {
+    "id": "cool_007",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "湊が、画面を閉じた。",
+      "「今日はここまでにする。……君も、帰れ」",
+      "",
+      "でも——引き止めたいと思う気持ちが、あった。"
+    ],
+    "effect": null,
+    "auto_next": "cool_008",
+    "choices": []
+  },
+  {
+    "id": "cool_008",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "施設の屋上——夕暮れ。",
+      "湊が珍しく、一人でそこにいた。",
+      "論文を読んでいたが、ページをめくる手が止まっていた。"
+    ],
+    "effect": null,
+    "auto_next": "cool_009",
+    "choices": []
+  },
+  {
+    "id": "cool_009",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……この論文に、面白い仮説がある」",
+      "",
+      "「FATESの相性算出モデルには——『感情値の欠落』があるという指摘だ。",
+      "　つまり、制度は感情を計算に含めていない。",
+      "　意図的に」"
+    ],
+    "effect": null,
+    "auto_next": "cool_010",
+    "choices": []
+  },
+  {
+    "id": "cool_010",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「感情は——不安定すぎるから、変数から除外された。",
+      "　だが、俺はその仮説を……ずっと否定しようとしてきた」"
+    ],
+    "effect": null,
+    "auto_next": "cool_011",
+    "choices": []
+  },
+  {
+    "id": "cool_011",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「……なんで否定しようとしたんですか？」",
+      "",
+      "湊が、夕陽を見た。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「感情を数値化したかったから？」",
+        "next_scene": "cool_012a",
+        "effects": [
+          { "type": "affection", "target": "cool", "value": 2, "op": "add" }
+        ]
+      },
+      {
+        "label": "「感情が、怖かったから？」",
+        "next_scene": "cool_012b",
+        "effects": [
+          { "type": "affection", "target": "cool", "value": 3, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cool_012a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……そうかもしれない。",
+      "　測れれば——制御できる。",
+      "　制御できれば——傷つかなくていい」"
+    ],
+    "effect": null,
+    "auto_next": "cool_013",
+    "choices": []
+  },
+  {
+    "id": "cool_012b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……」",
+      "",
+      "長い沈黙の後。",
+      "「——正しい、かもしれない」"
+    ],
+    "effect": null,
+    "auto_next": "cool_013",
+    "choices": []
+  },
+  {
+    "id": "cool_013",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……数値化できないのが——一番、厄介だ」",
+      "",
+      "声が、珍しく——静かだった。"
+    ],
+    "effect": null,
+    "auto_next": "cool_014",
+    "choices": []
+  },
+  {
+    "id": "cool_014",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「その感情値——湊さんの中にも、あるんじゃないですか」",
+      "",
+      "湊が、こちらを見た。",
+      "珍しく——言葉を探している顔だった。"
+    ],
+    "effect": null,
+    "auto_next": "cool_015",
+    "choices": []
+  },
+  {
+    "id": "cool_015",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……ある。",
+      "　それが何なのか——俺には、まだわからない。",
+      "　だが——」",
+      "",
+      "「この感情を、データで説明しようとするのを——やめた」"
+    ],
+    "effect": null,
+    "auto_next": "cool_016",
+    "choices": []
+  },
+  {
+    "id": "cool_016",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "夕陽が、湊の横顔を染めた。",
+      "「……いつから？」と聞いたら、きっと——",
+      "「君に会ってから」と言いそうだった。",
+      "",
+      "でも湊は、それを「データ」では出せないと知っている。"
+    ],
+    "effect": null,
+    "auto_next": "cool_017",
+    "choices": []
+  },
+  {
+    "id": "cool_017",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "資料室——深夜。",
+      "湊が、論文を閉じた。",
+      "",
+      "「……一つ、告白がある」"
+    ],
+    "effect": null,
+    "auto_next": "cool_018",
+    "choices": []
+  },
+  {
+    "id": "cool_018",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「俺は——君のことを、最初から統計的に分析しようとしていた。",
+      "　75%という数値の根拠を、自分で検証しようとして。",
+      "　——失敗した」"
+    ],
+    "effect": null,
+    "auto_next": "cool_019",
+    "choices": []
+  },
+  {
+    "id": "cool_019",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……君は、俺の計算に収まらない。",
+      "　どこにも分類できない。",
+      "　それが——」"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「それが——？」",
+        "next_scene": "cool_020a",
+        "effects": [
+          { "type": "affection", "target": "cool", "value": 3, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……嬉しい、と言っていいですか」",
+        "next_scene": "cool_020b",
+        "effects": [
+          { "type": "affection", "target": "cool", "value": 2, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cool_020a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "smile", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「——俺が間違っていた。",
+      "　感情は誤差じゃない。",
+      "　……君は、誤差じゃない」"
+    ],
+    "effect": null,
+    "auto_next": "cool_end_choice",
+    "choices": []
+  },
+  {
+    "id": "cool_020b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "smile", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……そういう反応も、計算外だ」",
+      "",
+      "湊が、かすかに笑った。",
+      "「——俺が間違っていた。君は、誤差じゃない」"
+    ],
+    "effect": null,
+    "auto_next": "cool_end_choice",
+    "choices": []
+  },
+  {
+    "id": "cool_end_choice",
+    "background": "bg_main",
+    "characters": [{ "character_id": "minato", "sprite": "smile", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "湊が、論文を閉じた。",
+      "「——この先、どうする」"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「一緒に、感情値を証明したい」",
+        "next_scene": "cool_true_001"
+      },
+      {
+        "label": "「75%の先を、一緒に歩きたい」",
+        "next_scene": "cool_happy_001"
+      },
+      {
+        "label": "「……もう少しだけ、待ってほしい」",
+        "next_scene": "cool_bitter_001"
+      }
+    ]
+  },
+  {
+    "id": "cool_true_001",
+    "background": "still_cool_true",
+    "characters": [{ "character_id": "minato", "sprite": "smile", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……証明。いい言葉だ」",
+      "",
+      "「この感情に——名前をつける。",
+      "　——愛だ」",
+      "",
+      "湊が、初めて——理論じゃない言葉を使った。"
+    ],
+    "effect": null,
+    "auto_next": "cool_true_002",
+    "choices": []
+  },
+  {
+    "id": "cool_true_002",
+    "background": "still_cool_true",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "True End：「誤差の名前」",
+      "",
+      "感情値は——測れない。",
+      "でも、名前はつけられる。",
+      "",
+      "湊が言った言葉を——私は、ずっと覚えているだろう。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "cool_happy_001",
+    "background": "still_cool_happy",
+    "characters": [{ "character_id": "minato", "sprite": "smile", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……75%の先に、何があるかは——わからない。",
+      "　だが、俺は——君と一緒に、確かめたい」"
+    ],
+    "effect": null,
+    "auto_next": "cool_happy_002",
+    "choices": []
+  },
+  {
+    "id": "cool_happy_002",
+    "background": "still_cool_happy",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "Happy End：「75%の先に」",
+      "",
+      "スコアの向こう側。",
+      "FATESが計算していない場所に——二人の答えがある。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "cool_bitter_001",
+    "background": "still_cool_bitter",
+    "characters": [{ "character_id": "minato", "sprite": "normal", "position": "right" }],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……わかった。待つ」",
+      "",
+      "「俺は——どこにも行かない。",
+      "　ここで、データを積み続ける。",
+      "　……答えが出るまで」"
+    ],
+    "effect": null,
+    "auto_next": "cool_bitter_002",
+    "choices": []
+  },
+  {
+    "id": "cool_bitter_002",
+    "background": "still_cool_bitter",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "Bitter End：「計算できない距離」",
+      "",
+      "感情を認めながらも——踏み出せない二人。",
+      "でも、湊は——計算をやめていない。",
+      "私の答えを、待ち続けている。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  }
+]

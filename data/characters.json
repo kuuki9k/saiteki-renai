@@ -1,0 +1,38 @@
+{
+  "reo": {
+    "name": "一条 玲央",
+    "compatibility": 98,
+    "nameColor": "#c9a96e",
+    "sprites": {
+      "normal": "イラスト/キャラ背景透過済/01玲央.立ち絵.切り抜き.png",
+      "angry":  "イラスト/キャラ背景透過済/01玲央.表情差分(怒る).切り抜き.png"
+    }
+  },
+  "minato": {
+    "name": "神崎 湊",
+    "compatibility": 75,
+    "nameColor": "#5b8fc9",
+    "sprites": {
+      "normal": "イラスト/キャラ背景透過済/02湊.立ち絵.切り抜き.png",
+      "smile":  "イラスト/キャラ背景透過済/02湊.表情差分(笑う).切り抜き.png"
+    }
+  },
+  "saku": {
+    "name": "黒瀬 朔",
+    "compatibility": 0,
+    "nameColor": "#8b9dc3",
+    "sprites": {
+      "normal": "イラスト/キャラ背景透過済/03朔.立ち絵.切り抜き.png",
+      "smile":  "イラスト/キャラ背景透過済/03朔.表情差分(笑う).切り抜き.png"
+    }
+  },
+  "yuma": {
+    "name": "橘 悠真",
+    "compatibility": null,
+    "nameColor": "#c4a35a",
+    "sprites": {
+      "normal": "イラスト/キャラ背景透過済/04悠真.立ち絵.切り抜き.png",
+      "open":   "イラスト/キャラ背景透過済/04悠真.表情差分(怒る).切り抜き.png"
+    }
+  }
+}

@@ -1,0 +1,432 @@
+[
+  {
+    "id": "childhood_000",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "夜。申告期限まで、あと一日。",
+      "FATESの申告フォームを、静かに開いた。",
+      "",
+      "候補者の欄。三人の名前と、スコアが並ぶ。",
+      "——探している名前が、どこにもない。",
+      "",
+      "当たり前だ。制度に登録されていない人間は、選べない。",
+      "",
+      "画面をしばらく見つめて——閉じた。",
+      "送信ボタンには、触れなかった。",
+      "",
+      "それでも。頭から、離れなかった。"
+    ],
+    "effect": "fade_in",
+    "auto_next": "childhood_001",
+    "choices": []
+  },
+  {
+    "id": "childhood_001",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESは——{橘 悠真|たちばな ゆうま}の名前を、候補として挙げなかった。",
+      "",
+      "制度の外に、ずっとそこにいた人。",
+      "——私は、その人のことが頭から離れなかった。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_002",
+    "choices": []
+  },
+  {
+    "id": "childhood_002",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「——もう、決めたの？",
+      "　制度の申告。締め切り、来週だよな」",
+      "",
+      "昔の公園。悠真が、ベンチに座って空を見ていた。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_003",
+    "choices": []
+  },
+  {
+    "id": "childhood_003",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「……まだ、決めてない」",
+      "",
+      "悠真が、少し安心したような顔をした。",
+      "——気のせいかもしれないけど。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「悠真は、どう思う？」",
+        "next_scene": "childhood_004a",
+        "effects": [
+          { "type": "affection", "target": "childhood", "value": 3, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……FATES、信じた方がいいのかな」",
+        "next_scene": "childhood_004b",
+        "effects": [
+          { "type": "affection", "target": "childhood", "value": 2, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "childhood_004a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「俺？",
+      "　……俺は、制度には入れてもらえなかったから。",
+      "　そっちのことは、わかんないけどさ」",
+      "",
+      "「でも——君が決めることだと思ってる。",
+      "　俺じゃなくて、君が」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_005",
+    "choices": []
+  },
+  {
+    "id": "childhood_004b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「……FATESが正しいかどうかは、俺にはわかんない。",
+      "　でも——信じたくないなら、信じなくていいんじゃないかな」",
+      "",
+      "「人の気持ちまで、計算できるわけじゃないし」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_005",
+    "choices": []
+  },
+  {
+    "id": "childhood_005",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「俺は——候補にすら、入ってないんだよな」",
+      "",
+      "静かな声で、悠真が言った。",
+      "自嘲でもなく、責めるわけでもなく——ただ、事実として。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_006",
+    "choices": []
+  },
+  {
+    "id": "childhood_006",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「……悠真」",
+      "",
+      "何か言おうとして——言葉が出なかった。",
+      "悠真が、こちらを向いて笑う。",
+      "「ごめん、変なこと言った。気にしないで」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_007",
+    "choices": []
+  },
+  {
+    "id": "childhood_007",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "でも——「気にしないで」と言われても、気になる。",
+      "ずっと気になる。",
+      "",
+      "悠真の「候補にすら入ってない」という言葉が。",
+      "——私の胸の奥に、引っかかっていた。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_008",
+    "choices": []
+  },
+  {
+    "id": "childhood_008",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "古いコンビニ——雨宿り。",
+      "二人とも、傘を持っていなかった。",
+      "軒下で、肩が触れそうな距離に立つ。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_009",
+    "choices": []
+  },
+  {
+    "id": "childhood_009",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「昔さ、ここでよく雨宿りしてたよな」",
+      "",
+      "「あの時は——こんな制度、なかったし。",
+      "　FATESも、相性スコアも、なにもなかったし」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_010",
+    "choices": []
+  },
+  {
+    "id": "childhood_010",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「……それでも時間は進むよな」",
+      "",
+      "雨音の中、悠真が静かに言った。",
+      "懐かしさと、少しの寂しさが混じった声で。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_011",
+    "choices": []
+  },
+  {
+    "id": "childhood_011",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「……悠真、私のこと好きだった？　昔から…？」",
+      "",
+      "聞いてしまった。",
+      "雨の音で、ごまかされてしまえばよかった。",
+      "でも——静かすぎて、ちゃんと届いた。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「……ずっと、好きだった？」",
+        "next_scene": "childhood_012a",
+        "effects": [
+          { "type": "affection", "target": "childhood", "value": 3, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……私も、昔から」",
+        "next_scene": "childhood_012b",
+        "effects": [
+          { "type": "affection", "target": "childhood", "value": 3, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "childhood_012a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「……うん」",
+      "",
+      "あっさりと言った。",
+      "「ずっと、だよ。最初から。",
+      "　——でも、俺は候補じゃないからさ」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_013",
+    "choices": []
+  },
+  {
+    "id": "childhood_012b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "悠真が、少し驚いた顔をした。",
+      "「……俺も」",
+      "「ずっとそこにいたよ。君の隣」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_013",
+    "choices": []
+  },
+  {
+    "id": "childhood_013",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「制度の申告——しなくていい。",
+      "　俺は、君が申告しなくても、変わらないから。",
+      "　……それだけは、言いたかった」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_014",
+    "choices": []
+  },
+  {
+    "id": "childhood_014",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESから警告。",
+      "",
+      "「第一選択申告の締め切りまで、残り3日です。",
+      "　申告を行わない場合、社会信用度の低下および",
+      "　制度支援の一部停止が発生する場合があります」",
+      "",
+      "——私は、どうする？"
+    ],
+    "effect": null,
+    "flags_after": [
+      { "type": "social_credit", "op": "add", "value": -10 }
+    ],
+    "choices": [
+      {
+        "label": "「申告しない——悠真と歩く」",
+        "next_scene": "childhood_true_001"
+      },
+      {
+        "label": "「制度の中で——悠真と一緒にいる方法を探す」",
+        "next_scene": "childhood_happy_001"
+      },
+      {
+        "label": "「……まだ、答えが出ない」",
+        "next_scene": "childhood_friend_001"
+      }
+    ]
+  },
+  {
+    "id": "childhood_true_001",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "open", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「悠真——申告、しないことにした」",
+      "",
+      "悠真が、動きを止めた。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_true_002",
+    "choices": []
+  },
+  {
+    "id": "childhood_true_002",
+    "background": "bg_main",
+    "characters": [{ "character_id": "yuma", "sprite": "open", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「……いいの？　社会信用度、下がるかもしれないし——」",
+      "",
+      "「それでもいいの？だったら…」",
+      "",
+      "悠真が、手を伸ばした。"
+    ],
+    "effect": null,
+    "auto_next": "childhood_true_003",
+    "choices": []
+  },
+  {
+    "id": "childhood_true_003",
+    "background": "still_yuma_true",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "True End：「制度の外の二人」",
+      "",
+      "FATESに選ばれなかった人の手を取る。",
+      "制度が見ていない場所に——私たちの答えがある。",
+      "",
+      "「俺は最初から、君だけだよ」",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "childhood_happy_001",
+    "background": "still_yuma_happy",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「……制度の中でも、俺は一緒にいるよ。",
+      "　スコアとか関係なく」",
+      "",
+      "「君が選んでくれた方法で、行けばいい」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_happy_002",
+    "choices": []
+  },
+  {
+    "id": "childhood_happy_002",
+    "background": "still_yuma_happy",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "Happy End：「ずっとそこに」",
+      "",
+      "制度に頼らない——でも制度を恐れない。",
+      "悠真は、どんな選択をしても、そこにいた。",
+      "",
+      "それが——答えだと思った。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "childhood_friend_001",
+    "background": "still_yuma_friend",
+    "characters": [{ "character_id": "yuma", "sprite": "normal", "position": "right" }],
+    "speaker": "橘 悠真",
+    "text": [
+      "「……うん。ゆっくり考えていいよ」",
+      "",
+      "「俺は——どこにも行かないから。",
+      "　君が答えを出す日まで、ずっと待ってる」"
+    ],
+    "effect": null,
+    "auto_next": "childhood_friend_002",
+    "choices": []
+  },
+  {
+    "id": "childhood_friend_002",
+    "background": "still_yuma_friend",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "Friendship End：「いつかまた」",
+      "",
+      "今は、答えが出ない。",
+      "でも悠真は——待つと言った。",
+      "",
+      "「いつかまた」——その言葉が、",
+      "今は少しだけ、温かく感じられた。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  }
+]

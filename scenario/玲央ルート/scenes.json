@@ -1,0 +1,623 @@
+[
+  {
+    "id": "perfect_000",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "夜。部屋に一人。",
+      "FATESの申告フォームを開いた。",
+      "",
+      "候補者の欄に、名前が並ぶ。",
+      "——{一条 玲央|いちじょう れお}。98%。",
+      "",
+      "98%。",
+      "それが答えだと思った。思おうとした。",
+      "",
+      "指が、送信ボタンへ向かう。",
+      "——正しい選択だ。",
+      "そう、言い聞かせながら。"
+    ],
+    "effect": "fade_in",
+    "auto_next": "perfect_001",
+    "choices": []
+  },
+  {
+    "id": "perfect_001",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESは、私と{一条 玲央|いちじょう れお}の相性を\n98%と算出した。",
+      "施設の担当者から連絡が来たのは、翌朝のことだった。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_002",
+    "choices": []
+  },
+  {
+    "id": "perfect_002",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「おはよう。今日、少し時間はあるかな？",
+      "　担当者から連絡が来てただろう。……一緒に行こう」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_003",
+    "choices": []
+  },
+  {
+    "id": "perfect_003",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "柔らかく笑う玲央。",
+      "FATESが指定したカフェへの誘い。",
+      "断る理由は、どこにもなかった。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_004",
+    "choices": []
+  },
+  {
+    "id": "perfect_004",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「——このカフェ、FATESが推薦してきたんだ。",
+      "　内装も雰囲気も、君の好みに合わせて選んだらしい。",
+      "　……居心地、どう？」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_005",
+    "choices": []
+  },
+  {
+    "id": "perfect_005",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "確かに、居心地はいい。",
+      "照明も、カップの質感も、BGMも。",
+      "——でも、何かが引っかかる。",
+      "「私の好みを、どうやって知ってるんだろう……」"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「素敵な場所ですね」",
+        "next_scene": "perfect_006a",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": 2, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……FATESが選んだ場所なんですよね」",
+        "next_scene": "perfect_006b",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": 1, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "perfect_006a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「そう言ってもらえると、連れてきた甲斐があるよ。",
+      "　……でも正直、俺も初めて来た場所だ」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_007",
+    "choices": []
+  },
+  {
+    "id": "perfect_006b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……そうだな。俺も、ここに来たのは初めてだ。",
+      "　FATESを信じてみようと思って」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_007",
+    "choices": []
+  },
+  {
+    "id": "perfect_007",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「君のことを、もっと知りたいんだ。",
+      "　制度とは関係なく——俺個人として」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_008",
+    "choices": []
+  },
+  {
+    "id": "perfect_008",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "柔らかい声。",
+      "真剣な目。",
+      "——この人は、本当に「自分の意志」で話しているのだろうか。",
+      "それとも、98%という数字が、そう言わせているのだろうか。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_009",
+    "choices": []
+  },
+  {
+    "id": "perfect_009",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "数日後——施設の廊下で、玲央と肩を並べて歩いた。",
+      "周りのスタッフが、少し遠慮がちな視線を向ける。",
+      "「FATESの98%ペア」。そういう目だった。"
+    ],
+    "effect": "fade_in",
+    "auto_next": "perfect_010",
+    "choices": []
+  },
+  {
+    "id": "perfect_010",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……気にしなくていい。",
+      "　周りの目は、慣れると気にならなくなるから」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_011",
+    "choices": []
+  },
+  {
+    "id": "perfect_011",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「慣れてるんだ……」",
+      "ふと、そう思った。",
+      "「見られることに」慣れている人。",
+      "「制度に従うこと」に、慣れている人。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_012",
+    "choices": []
+  },
+  {
+    "id": "perfect_012",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "雨の日。",
+      "施設の軒下で、二人とも傘を持っていなかった。",
+      "玲央が空を見上げる。",
+      "「……雨か。FATESは天気まで教えてくれないな」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_013",
+    "choices": []
+  },
+  {
+    "id": "perfect_013",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……俺、雨は嫌いじゃない。",
+      "　予定通りにいかないことが、たまにあってもいいと思ってるから」",
+      "「——本当は」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_014",
+    "choices": []
+  },
+  {
+    "id": "perfect_014",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "玲央の声が、少し低くなった。",
+      "それが「本当の声」だと、なんとなくわかった。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「本当は、って？」",
+        "next_scene": "perfect_015a",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": 3, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……雨の日、好きです」",
+        "next_scene": "perfect_015b",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": 2, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "perfect_015a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……本当は、ずっとFATESの言う通りにしてきた。",
+      "　98%という数字を、裏切りたくなかった。",
+      "　——でも、雨の日くらい、傘を忘れてもいいだろう？」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_016",
+    "choices": []
+  },
+  {
+    "id": "perfect_015b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「そうか。……俺も、実は嫌いじゃない。",
+      "　計画通りにいかないことが、たまにあると——",
+      "　　なんか、ほっとするんだ」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_016",
+    "choices": []
+  },
+  {
+    "id": "perfect_016",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "雨音の中、少しの沈黙。",
+      "玲央が「完璧」をやめている瞬間だった。",
+      "——初めて、この人が好きになりそうだと思った。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_017",
+    "choices": []
+  },
+  {
+    "id": "perfect_017",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESから通知。",
+      "「一条玲央氏との交際申請が承認されました。",
+      "　おめでとうございます」",
+      "",
+      "施設のスタッフが祝福してくれた。",
+      "上司も笑顔で「うまくいきそうだね」と言った。",
+      "——なのに、私の胸の中は、妙に静かだった。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_018",
+    "choices": []
+  },
+  {
+    "id": "perfect_018",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "夜、一人で考える。",
+      "「私は——玲央さんを選んだんだろうか。",
+      "　それとも、FATESに選ばされたんだろうか」",
+      "",
+      "98%。",
+      "その数字に、何度も助けられてきた気がする。",
+      "でも——その数字を、私は本当に信じていたんだろうか。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_019",
+    "choices": []
+  },
+  {
+    "id": "perfect_019",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "翌日、施設の屋上。",
+      "「……一つ、聞いていいか？」"
+    ],
+    "effect": "fade_in",
+    "auto_next": "perfect_020",
+    "choices": []
+  },
+  {
+    "id": "perfect_020",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「俺が——FATESに従い続けているの、変だと思うか？」",
+      "",
+      "「……俺には、守りたいものがある。",
+      "　制度に逆らったら、傷つけてしまう人がいる。",
+      "　だから、ずっと——98%という数字の通りに、生きてきた」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_021",
+    "choices": []
+  },
+  {
+    "id": "perfect_021",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "玲央の目に、初めて「重さ」があった。",
+      "完璧な笑顔の裏側に、ずっと抱えていた何かが。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「……守りたい人って、誰ですか？」",
+        "next_scene": "perfect_022a",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": 3, "op": "add" }
+        ]
+      },
+      {
+        "label": "「変だとは、思いません」",
+        "next_scene": "perfect_022b",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": 2, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "perfect_022a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……母だ。病気で、制度の医療支援を受けてる。",
+      "　俺がFATESのスコアを下げると、支援が打ち切られる可能性がある。",
+      "　だから——」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_023",
+    "choices": []
+  },
+  {
+    "id": "perfect_022b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……ありがとう。",
+      "　——でも、正直に言うと。守りたい人がいるんだ。",
+      "　母が、制度の医療支援を受けていて」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_023",
+    "choices": []
+  },
+  {
+    "id": "perfect_023",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "玲央が空を見上げた。",
+      "「だから——俺は、ずっと「正しい側」にいなければならなかった。",
+      "　FATESが言う通りに、生きてきた。",
+      "　……それが、正解だと思い込んで」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_024",
+    "choices": []
+  },
+  {
+    "id": "perfect_024",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "私は——気づいていた。",
+      "この人は、「完璧」であることを義務として生きてきた。",
+      "それが愛情なのか、義務なのか、自分でもわからなくなりながら。",
+      "",
+      "——そして、私も。",
+      "制度に従うことを「楽な道」として選んできた。",
+      "本当に「選んだ」のか、ただ「流された」のか。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_025",
+    "choices": []
+  },
+  {
+    "id": "perfect_025",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "「——玲央さん」",
+      "",
+      "「私、一度だけ——制度じゃなくて、自分の気持ちで選び直したい。",
+      "　あなたのことを、数字じゃなくて、私の目で見て、決めたい」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_026",
+    "choices": []
+  },
+  {
+    "id": "perfect_026",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "玲央が——静止した。",
+      "",
+      "「……制度じゃなく、俺を見てくれていたんだな」",
+      "",
+      "少し間があって。",
+      "「……それは、ずっと——俺が、望んでいたことだった」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_end_choice",
+    "choices": []
+  },
+  {
+    "id": "perfect_end_choice",
+    "background": "bg_main",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "玲央の手が、そっと差し伸べられた。",
+      "「——君は、どうしたい？」"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「一緒に、制度の外を選びたい」",
+        "next_scene": "perfect_true_001"
+      },
+      {
+        "label": "「制度の中で、自分の気持ちで歩きたい」",
+        "next_scene": "perfect_happy_001"
+      },
+      {
+        "label": "「……まだ、答えが出ないんです」",
+        "next_scene": "perfect_normal_001"
+      }
+    ]
+  },
+  {
+    "id": "perfect_true_001",
+    "background": "still_reo_true",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……そうか」",
+      "",
+      "玲央が、初めて迷いのない目で笑った。",
+      "「じゃあ——一緒に行こう。FATESの外へ」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_true_002",
+    "choices": []
+  },
+  {
+    "id": "perfect_true_002",
+    "background": "still_reo_true",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESの承認は取り消された。",
+      "玲央の社会信用度は、少し下がった。",
+      "母への支援は——玲央が、別の方法で守ると決めた。",
+      "",
+      "「制度が正解じゃなくても、俺たちが正しいと思う道を行けばいい」",
+      "",
+      "玲央の手を握る。",
+      "——これが、私が選んだ未来だ。"
+    ],
+    "effect": null,
+    "auto_next": "perfect_true_003",
+    "choices": []
+  },
+  {
+    "id": "perfect_true_003",
+    "background": "still_reo_true",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "True End：「選び直した先で」",
+      "",
+      "——　FINｌ"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "perfect_happy_001",
+    "background": "still_reo_happy",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……わかった。",
+      "　制度の中でも、俺たちの「選択」は本物だ。",
+      "　——それで十分だと思う」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_happy_002",
+    "choices": []
+  },
+  {
+    "id": "perfect_happy_002",
+    "background": "still_reo_happy",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": null,
+    "text": [
+      "FATESのスコアは変わらない。",
+      "でも——私の中の何かが、変わった。",
+      "",
+      "「98%じゃない。私が選んだんだ」",
+      "",
+      "Happy End：「保証された未来」",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "perfect_normal_001",
+    "background": "still_reo_normal",
+    "characters": [{ "character_id": "reo", "sprite": "normal", "position": "right" }],
+    "speaker": "一条 玲央",
+    "text": [
+      "「……そうか。それでいい。",
+      "　答えが出るまで——俺は、ここにいるから」"
+    ],
+    "effect": null,
+    "auto_next": "perfect_normal_002",
+    "choices": []
+  },
+  {
+    "id": "perfect_normal_002",
+    "background": "still_reo_normal",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "玲央の温かさを、まだ受け取れないでいる。",
+      "でも——「いつか」という言葉が、少しだけ輝いて見えた。",
+      "",
+      "Normal End：「優しい距離」",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  }
+]
