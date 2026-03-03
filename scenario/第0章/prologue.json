@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "pro_000",
+    "type": "name_input",
+    "background": "bg_main",
+    "bgm": "morning_ambient",
+    "characters": [],
+    "speaker": "FATES SYSTEM",
+    "text": [
+      "——　プロフィール確認　——",
+      "FATES CENTER 第三支部　来訪者登録",
+      "",
+      "登録されている氏名を確認してください。",
+      "誤りがある場合は今すぐ訂正してください。"
+    ],
+    "default_family": "山田",
+    "default_name": "花子",
+    "effect": null,
+    "auto_next": "pro_001",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_001",
+    "background": "bg_main",
+    "bgm": "morning_ambient",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "18歳の誕生日。",
+      "今日が、すべての始まりだと、誰もが言う。"
+    ],
+    "effect": "fade_in",
+    "auto_next": "pro_001_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_001_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "国家AIシステム「{FATES|フェイツ}」——",
+      "全国民の相性データを解析し、最適な結婚候補を提示する制度が施行されて5年。",
+      "今年から、18歳全員が対象になった。"
+    ],
+    "effect": null,
+    "auto_next": "pro_002",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_002",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "朝7時12分。",
+      "スマートフォンの画面が、静かに光った。",
+      "",
+      "『FATES SYSTEM — 相性解析結果のお知らせ』"
+    ],
+    "effect": null,
+    "auto_next": "pro_002_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_002_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "……来た。",
+      "分かっていたはずなのに、少しだけ手が止まる。"
+    ],
+    "effect": null,
+    "auto_next": "pro_003",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_003",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "通知を開く？"
+    ],
+    "effect": null,
+    "auto_next": null,
+    "choices": [
+      {
+        "label": "今すぐ確認する",
+        "next_scene": "pro_004a",
+        "effects": [{ "type": "social_credit", "target": "global", "value": 5, "op": "add" }],
+        "condition": null
+      },
+      {
+        "label": "後で見ればいい",
+        "next_scene": "pro_004b",
+        "effects": [{ "type": "social_credit", "target": "global", "value": -3, "op": "add" }],
+        "condition": null
+      }
+    ],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_004a",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "深呼吸して、画面をタップする。",
+      "",
+      "候補者リストが展開された。"
+    ],
+    "effect": null,
+    "auto_next": "pro_004a_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_004a_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "　{一条 玲央|いちじょう れお}　… 適合率 98%",
+      "　{神崎 湊|かんざき みなと}　　… 適合率 75%",
+      "　{黒瀬 朔|くろせ さく}　　… 適合率  0%　【ERROR: データ不完全】"
+    ],
+    "effect": null,
+    "auto_next": "pro_004a_3",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_004a_3",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "……0%。エラー。",
+      "なんだか、目が離せない。"
+    ],
+    "effect": null,
+    "auto_next": "pro_005",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_004b",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "後で見ればいいや、と思って画面を伏せる。",
+      "",
+      "……でも少し気になって、結局5分後には開いていた。"
+    ],
+    "effect": null,
+    "auto_next": "pro_004b_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_004b_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "　{一条 玲央|いちじょう れお}　… 適合率 98%",
+      "　{神崎 湊|かんざき みなと}　　… 適合率 75%",
+      "　{黒瀬 朔|くろせ さく}　　… 適合率  0%　【ERROR: データ不完全】"
+    ],
+    "effect": null,
+    "auto_next": "pro_004b_3",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_004b_3",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "……なんだこれ。エラーって、何。"
+    ],
+    "effect": null,
+    "auto_next": "pro_005",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_005",
+    "background": "bg_main",
+    "bgm": "city_ambient",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "制度研究施設「FATES CENTER 第三支部」。",
+      "バイト先にして、今日から定期的に通うことになる場所だ。"
+    ],
+    "effect": null,
+    "auto_next": "pro_005_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_005_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "通勤路には、いつもと変わらない街並みが続く。",
+      "コーヒースタンド。制服姿の学生たち。",
+      "街頭モニターに映るFATESのキャンペーン広告。",
+      "",
+      "『あなたにとって最適な未来を、AIが見つけます。』"
+    ],
+    "effect": null,
+    "auto_next": "pro_005_3",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_005_3",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "……まあ。98%なら、従っておくのが楽なのかもしれない。"
+    ],
+    "effect": null,
+    "auto_next": "pro_006",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_006",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "施設のエントランスに入ると、受付の人に通行証を渡される。"
+    ],
+    "effect": null,
+    "auto_next": "pro_006_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_006_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "「今日から定期来訪者の登録が完了しています。",
+      "　FATES候補者との交流プログラムが開始されますので、",
+      "　廊下の案内板にしたがって移動してください」"
+    ],
+    "effect": null,
+    "auto_next": "pro_006_3",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_006_3",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "……候補者との交流プログラム。",
+      "つまり今日から、「候補者に会う」ことが業務の一部になる。",
+      "",
+      "なんというか。あまり、ロマンチックじゃないな。"
+    ],
+    "effect": null,
+    "auto_next": "pro_007",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_007",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "reo", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "廊下を歩いていると、前から誰かが歩いてくる。",
+      "",
+      "白いスーツ。茶色の髪。穏やかな微笑み。"
+    ],
+    "effect": null,
+    "auto_next": "pro_007_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_007_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "reo", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "スマートフォンで何かを確認しながら、こちらに気づいていない様子だ。",
+      "",
+      "——と、視線が合った。",
+      "彼はすっと画面をしまい、軽くお辞儀をする。"
+    ],
+    "effect": null,
+    "auto_next": null,
+    "choices": [
+      {
+        "label": "「えっと……一条、玲央さん、ですか」",
+        "next_scene": "pro_008a",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": 3, "op": "add" },
+          { "type": "social_credit", "target": "global", "value": 3, "op": "add" }
+        ],
+        "condition": null
+      },
+      {
+        "label": "（目を逸らして、通り過ぎる）",
+        "next_scene": "pro_008b",
+        "effects": [
+          { "type": "affection", "target": "perfect", "value": -1, "op": "add" },
+          { "type": "social_credit", "target": "global", "value": -2, "op": "add" }
+        ],
+        "condition": null
+      }
+    ],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_008a",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "reo", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": "{一条 玲央|いちじょう れお}",
+    "text": [
+      "「はい。……{playerLastName}さん、ですね。",
+      "　はじめまして。一条玲央です」"
+    ],
+    "effect": null,
+    "auto_next": "pro_008a_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_008a_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "reo", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "穏やかな声。自然な笑顔。",
+      "確かに——このひとは、完璧に見える。"
+    ],
+    "effect": null,
+    "auto_next": "pro_008a_3",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_008a_3",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "reo", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "FATESが98%と算出した、それだけのことはある。",
+      "",
+      "……なのに、なぜかちょっと、居心地が悪い。"
+    ],
+    "effect": null,
+    "auto_next": "pro_009",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_008b",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "（気づかなかったふりをして、そのまま通り過ぎた）",
+      "",
+      "……後ろから視線を感じた気がしたけど。"
+    ],
+    "effect": null,
+    "auto_next": "pro_008b_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_008b_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "まあいい。制度に従って「交流」するかどうかは、まだ決めていない。",
+      "別に、最初から仲良くする義理はない。"
+    ],
+    "effect": null,
+    "auto_next": "pro_009",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_009",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "minato", "sprite": "normal", "position": "left", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "資料室のドアを開けると、すでに先客がいた。",
+      "",
+      "黒いスーツ。腕組み。こちらを一瞥して、また手元の資料に視線を戻す。"
+    ],
+    "effect": null,
+    "auto_next": "pro_009_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_009_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "minato", "sprite": "normal", "position": "left", "visible": true }
+    ],
+    "speaker": "{神崎 湊|かんざき みなと}",
+    "text": [
+      "「……神崎湊、です。用があるなら早く言ってください。",
+      "　時間のムダが嫌いなので」"
+    ],
+    "effect": null,
+    "auto_next": null,
+    "choices": [
+      {
+        "label": "「私も資料を見に来ただけです」",
+        "next_scene": "pro_009a",
+        "effects": [{ "type": "affection", "target": "cool", "value": 2, "op": "add" }],
+        "condition": null
+      },
+      {
+        "label": "（……感じ悪い人だな）",
+        "next_scene": "pro_009b",
+        "effects": [],
+        "condition": null
+      }
+    ],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_009a",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "minato", "sprite": "normal", "position": "left", "visible": true }
+    ],
+    "speaker": "神崎 湊",
+    "text": [
+      "「……そうですか」"
+    ],
+    "effect": null,
+    "auto_next": "pro_009a_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_009a_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "minato", "sprite": "normal", "position": "left", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "短い返事。興味なさそうな横顔。",
+      "",
+      "でもなぜか、完全に無視はしてこない。",
+      "同じ空間に、ただ、いる。"
+    ],
+    "effect": null,
+    "auto_next": "pro_009a_3",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_009a_3",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "minato", "sprite": "normal", "position": "left", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "……75%、か。数字のわりに、とっつきにくいな。"
+    ],
+    "effect": null,
+    "auto_next": "pro_010",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_009b",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "minato", "sprite": "normal", "position": "left", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "（……感じ悪い。）",
+      "",
+      "資料を適当に取って、部屋の隅に座る。"
+    ],
+    "effect": null,
+    "auto_next": "pro_009b_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_009b_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "minato", "sprite": "normal", "position": "left", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "75%。それなりに高い数値のはずなのに、",
+      "まったく「合いそう」という気がしない。",
+      "",
+      "数字って、当てにならないのかもしれない。"
+    ],
+    "effect": null,
+    "auto_next": "pro_010",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_010",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "yuma", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "施設の廊下を戻っていると、聞き慣れた声がした。",
+      "",
+      "「あ——！　{playerName}！」"
+    ],
+    "effect": null,
+    "auto_next": "pro_010_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_010_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "yuma", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "振り向くと、{橘悠真|たちばな ゆうま}がこちらに向かって手を振っている。",
+      "ベージュのジャケット。変わらない笑顔。……久しぶりだ。"
+    ],
+    "effect": null,
+    "auto_next": null,
+    "choices": [
+      {
+        "label": "「悠真！　久しぶり、なんでここに？」",
+        "next_scene": "pro_010a",
+        "effects": [
+          { "type": "affection", "target": "childhood", "value": 3, "op": "add" },
+          { "type": "flag", "target": "met_childhood", "value": true, "op": "set" }
+        ],
+        "condition": null
+      },
+      {
+        "label": "「……奇遇だね」（ぎこちなく笑う）",
+        "next_scene": "pro_010b",
+        "effects": [
+          { "type": "affection", "target": "childhood", "value": 1, "op": "add" },
+          { "type": "flag", "target": "met_childhood", "value": true, "op": "set" }
+        ],
+        "condition": null
+      }
+    ],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_010a",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "yuma", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": "{橘 悠真|たちばな ゆうま}",
+    "text": [
+      "「{playerName}も来てたんだ。",
+      "　俺も今日からここでバイトすることになってさ」"
+    ],
+    "effect": null,
+    "auto_next": "pro_010a_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_010a_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "yuma", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "照れくさそうに笑う悠真。",
+      "制度の話は、どちらからも出なかった。",
+      "",
+      "……なんとなく、それが居心地よかった。"
+    ],
+    "effect": null,
+    "auto_next": "pro_011",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_010b",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "yuma", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": "橘 悠真",
+    "text": [
+      "「……ぎこちない。",
+      "　俺たち、そんな関係になってたっけ」"
+    ],
+    "effect": null,
+    "auto_next": "pro_010b_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_010b_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "yuma", "sprite": "normal", "position": "right", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "……ごめん。なんか、うまく笑えなかった。",
+      "FATESのリストに、あなたの名前がなかったから。"
+    ],
+    "effect": null,
+    "auto_next": "pro_011",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_011",
+    "background": "bg_main",
+    "bgm": "tense_ambient",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "帰ろうとしたとき、非常階段のドアが少し開いているのに気づいた。",
+      "",
+      "薄暗い踊り場。スマートフォンの光も、BGMも、何もない。"
+    ],
+    "effect": null,
+    "auto_next": "pro_011_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_011_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "——そこに、誰かいる。"
+    ],
+    "effect": null,
+    "auto_next": "pro_012",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_012",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "saku", "sprite": "normal", "position": "center", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "黒いシャツ、黒いジャケット。",
+      "壁に背を預けて、こちらを見ていた。"
+    ],
+    "effect": null,
+    "auto_next": "pro_012_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_012_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "saku", "sprite": "normal", "position": "center", "visible": true }
+    ],
+    "speaker": null,
+    "text": [
+      "ぶつかりそうになって、思わず声をかけてしまった。",
+      "「ご、ごめん——っ」"
+    ],
+    "effect": null,
+    "auto_next": "pro_012b",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_012b",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [
+      { "character_id": "saku", "sprite": "normal", "position": "center", "visible": true }
+    ],
+    "speaker": "{黒瀬 朔|くろせ さく}",
+    "text": [
+      "「……俺には、関係ない話だ」"
+    ],
+    "effect": null,
+    "auto_next": "pro_012c",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_012c",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "それだけ言って、彼はドアの奥へ消えた。",
+      "",
+      "残ったのは、静寂と、",
+      "なぜか胸の中に引っかかった一言だけ。"
+    ],
+    "effect": null,
+    "auto_next": "pro_013",
+    "choices": [],
+    "conditions": null,
+    "flags_after": [
+      { "type": "flag", "target": "met_error", "value": true, "op": "set" }
+    ]
+  },
+
+  {
+    "id": "pro_013",
+    "background": "bg_main",
+    "bgm": "quiet_piano",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "休憩室のソファに一人で座って、スマートフォンを見つめる。",
+      "",
+      "　黒瀬 朔　… 適合率  0%　【ERROR: データ不完全】"
+    ],
+    "effect": null,
+    "auto_next": "pro_013_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_013_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "……0%って、何。",
+      "データ不完全って、どういうこと。",
+      "",
+      "エラーが出るなら、なんで候補者リストに名前があるんだろう。"
+    ],
+    "effect": null,
+    "auto_next": "pro_014",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_014",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "第一日の終わり。",
+      "今日会った人たちの顔が、頭の中をぐるぐる巡る。",
+      "",
+      "……誰のことが、一番頭に残っているだろう。"
+    ],
+    "effect": null,
+    "auto_next": null,
+    "choices": [
+      {
+        "label": "玲央の穏やかな笑顔",
+        "next_scene": "pro_014a",
+        "effects": [{ "type": "affection", "target": "perfect", "value": 2, "op": "add" }],
+        "condition": null
+      },
+      {
+        "label": "湊の冷たい横顔",
+        "next_scene": "pro_014b",
+        "effects": [{ "type": "affection", "target": "cool", "value": 2, "op": "add" }],
+        "condition": null
+      },
+      {
+        "label": "悠真の困った笑顔",
+        "next_scene": "pro_014c",
+        "effects": [{ "type": "affection", "target": "childhood", "value": 2, "op": "add" }],
+        "condition": null
+      },
+      {
+        "label": "「関係ない」という言葉",
+        "next_scene": "pro_014d",
+        "effects": [{ "type": "affection", "target": "error", "value": 2, "op": "add" }],
+        "condition": null
+      }
+    ],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_014a",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "玲央の、あの笑顔。",
+      "完璧すぎて、逆に何を考えているか分からない。"
+    ],
+    "effect": null,
+    "auto_next": "pro_014a_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_014a_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "——でも、確かに「良い人」ではあるんだろう。",
+      "そう思う自分も、どこか計算してる気がして、少し嫌だった。"
+    ],
+    "effect": null,
+    "auto_next": "pro_015",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_014b",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "湊の、あの横顔。",
+      "ムダが嫌いと言いながら、無視もしてこなかった。"
+    ],
+    "effect": null,
+    "auto_next": "pro_014b_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_014b_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "75%。数字の意味を、あの人自身はどう思ってるんだろう。",
+      "……少しだけ、気になる。"
+    ],
+    "effect": null,
+    "auto_next": "pro_015",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_014c",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "悠真の、あの困った笑顔。",
+      "",
+      "「ぎこちない」って言われてしまった。"
+    ],
+    "effect": null,
+    "auto_next": "pro_014c_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_014c_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESの話を避けた自分も、悠真も。",
+      "……昔みたいに話せる日、また来るかな。"
+    ],
+    "effect": null,
+    "auto_next": "pro_015",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_014d",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "「……俺には、関係ない話だ」",
+      "",
+      "あの言葉が、何度も頭の中で繰り返される。"
+    ],
+    "effect": null,
+    "auto_next": "pro_014d_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_014d_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "0%のエラー枠。",
+      "関係ない、と言ったあの人。",
+      "それでも——なんで、リストに名前があるんだろう。"
+    ],
+    "effect": null,
+    "auto_next": "pro_015",
+    "choices": [],
+    "conditions": null
+  },
+
+  {
+    "id": "pro_015",
+    "background": "bg_main",
+    "bgm": "night_ambient",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "夜のアパート。",
+      "天井を見上げながら、今日のことを思い返す。"
+    ],
+    "effect": null,
+    "auto_next": "pro_015_2",
+    "choices": [],
+    "conditions": null
+  },
+  {
+    "id": "pro_015_2",
+    "background": "bg_main",
+    "bgm": null,
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "明日も来なきゃいけない。",
+      "明後日も。来週も、その次も。",
+      "",
+      "……なんでこんなに、落ち着かないんだろう。"
+    ],
+    "effect": "fade_out",
+    "auto_next": "common_001",
+    "choices": [],
+    "conditions": null
+  }
+]

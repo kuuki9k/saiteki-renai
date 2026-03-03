@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最適恋愛プログラム</title>
+  <link rel="icon" type="image/jpeg" href="イラスト/アイキャッチ.jpg">
+  <meta property="og:title" content="最適恋愛プログラム">
+  <meta property="og:description" content="18歳で国家AIが最適結婚候補を提示する社会——あなたは、誰を選ぶ？">
+  <meta property="og:image" content="イラスト/アイキャッチ.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="イラスト/アイキャッチ.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==========================================
+     ゲームコンテナ（960×540 / 16:9）
+     ========================================== -->
+<div id="game-container">
+
+  <!-- 背景レイヤー -->
+  <div id="bg-layer"></div>
+
+  <!-- フェードオーバーレイ -->
+  <div id="overlay"></div>
+
+  <!-- 立ち絵スロット -->
+  <div id="char-left"   class="char-slot"></div>
+  <div id="char-center" class="char-slot"></div>
+  <div id="char-right"  class="char-slot"></div>
+
+  <!-- HUD トグルボタン（右上） -->
+  <button id="hud-toggle-btn">♥ 状態</button>
+
+  <!-- HUD パネル（トグルで開閉） -->
+  <div id="hud-box"></div>
+
+  <!-- メニューバー（左上） -->
+  <div id="menu-bar">
+    <button class="menu-btn" id="btn-save">セーブ</button>
+    <button class="menu-btn" id="btn-load">ロード</button>
+    <button class="menu-btn" id="btn-log">ログ</button>
+    <button class="menu-btn" id="btn-title">タイトル</button>
+  </div>
+
+  <!-- テキストボックス -->
+  <div id="text-box" style="display:none;">
+    <div id="speaker-name"></div>
+    <div id="dialogue-text"></div>
+  </div>
+
+  <!-- 選択肢ボックス -->
+  <div id="choices-box"></div>
+
+  <!-- セーブ/ロード画面 -->
+  <div id="save-screen">
+    <h2 id="save-screen-title">セーブ</h2>
+    <div class="save-slots" id="save-slots"></div>
+    <button class="save-close-btn" id="save-close-btn">閉じる</button>
+  </div>
+
+  <!-- ログ画面 -->
+  <div id="log-screen">
+    <div id="log-header">
+      <span id="log-title-label">会話ログ</span>
+      <button id="log-close-btn">閉じる</button>
+    </div>
+    <div id="log-content"></div>
+  </div>
+
+  <!-- タイトル画面 -->
+  <div id="title-screen">
+    <div id="title-logo">
+      <h1>最適恋愛プログラム</h1>
+      <p>— OPTIMAL LOVE PROGRAM —</p>
+    </div>
+    <button class="title-btn" id="btn-new-game">はじめから</button>
+    <button class="title-btn" id="btn-continue">つづきから</button>
+  </div>
+
+</div><!-- /game-container -->
+
+
+<!-- ==========================================
+     スクリプト読み込み（順序重要）
+     ========================================== -->
+<script src="js/state.js"></script>
+<script src="js/sprite.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/save.js"></script>
+
+<script>
+// ==========================================
+//  メインスクリプト — 初期化 & UIイベント
+// ==========================================
+
+// ---- グローバルにキャラクターデータを展開 ----
+window.CHARACTERS = null;
+
+async function loadCharacters() {
+  const res = await fetch("data/characters.json");
+  window.CHARACTERS = await res.json();
+}
+
+// ---- インスタンス生成 ----
+let renderer = null;
+let engine   = null;
+
+function initInstances() {
+  renderer = new Renderer();
+  engine   = new GameEngine(GameState, renderer);
+}
+
+// ---- タイトル画面 ----
+const titleScreen = document.getElementById("title-screen");
+const saveScreen  = document.getElementById("save-screen");
+
+function showTitle() {
+  titleScreen.style.display = "flex";
+  document.getElementById("menu-bar").style.display = "none";
+}
+
+function hideTitle() {
+  titleScreen.style.display = "none";
+  document.getElementById("menu-bar").style.display = "flex";
+}
+
+// ---- はじめから ----
+document.getElementById("btn-new-game").addEventListener("click", async () => {
+  hideTitle();
+  renderer.showTitleScreen();
+  renderer.updateHUD(GameState);
+  await engine.startGame("pro_000");
+});
+
+// ---- つづきから（スロット1優先） ----
+document.getElementById("btn-continue").addEventListener("click", () => {
+  openSaveScreen("load");
+});
+
+// ---- セーブボタン ----
+document.getElementById("btn-save").addEventListener("click", () => {
+  openSaveScreen("save");
+});
+
+// ---- ロードボタン ----
+document.getElementById("btn-load").addEventListener("click", () => {
+  openSaveScreen("load");
+});
+
+// ---- ステータストグルボタン ----
+document.getElementById("hud-toggle-btn").addEventListener("click", () => {
+  document.getElementById("hud-box").classList.toggle("visible");
+});
+
+// ---- ログボタン ----
+document.getElementById("btn-log").addEventListener("click", () => {
+  openLog();
+});
+
+document.getElementById("log-close-btn").addEventListener("click", () => {
+  document.getElementById("log-screen").classList.remove("visible");
+});
+
+// Escキーでログを閉じる
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    document.getElementById("log-screen").classList.remove("visible");
+  }
+});
+
+function openLog() {
+  const logScreen   = document.getElementById("log-screen");
+  const logContent  = document.getElementById("log-content");
+  const entries     = renderer ? renderer.getLog() : [];
+
+  logContent.innerHTML = "";
+
+  if (entries.length === 0) {
+    const empty = document.createElement("div");
+    empty.className   = "log-empty";
+    empty.textContent = "——　まだ会話がありません";
+    logContent.appendChild(empty);
+  } else {
+    entries.forEach(entry => {
+      const div = document.createElement("div");
+      div.className = "log-entry";
+
+      if (entry.spkHTML) {
+        const spk = document.createElement("div");
+        spk.className   = "log-speaker";
+        spk.innerHTML   = entry.spkHTML;
+        spk.style.color = entry.spkColor || "#fff";
+        div.appendChild(spk);
+      }
+
+      const txt = document.createElement("div");
+      txt.className = "log-text";
+      txt.innerHTML = entry.textHTML;
+      div.appendChild(txt);
+
+      logContent.appendChild(div);
+    });
+  }
+
+  logScreen.classList.add("visible");
+  // 最下部（最新）にスクロール
+  logContent.scrollTop = logContent.scrollHeight;
+}
+
+// ---- タイトルへ戻るボタン ----
+document.getElementById("btn-title").addEventListener("click", () => {
+  if (confirm("タイトルに戻りますか？（セーブしていない進行は失われます）")) {
+    showTitle();
+  }
+});
+
+// ---- セーブ/ロード画面 ----
+let _saveMode = "save"; // "save" | "load"
+
+function sceneIdToChapterName(sceneId) {
+  const prefix = (sceneId || "").split("_")[0];
+  const map = {
+    pro:       "プロローグ",
+    common:    "第一章",
+    perfect:   "玲央ルート",
+    cool:      "湊ルート",
+    error:     "朔ルート",
+    childhood: "悠真ルート"
+  };
+  return map[prefix] ?? sceneId;
+}
+
+function openSaveScreen(mode) {
+  _saveMode = mode;
+  document.getElementById("save-screen-title").textContent =
+    mode === "save" ? "セーブ" : "ロード";
+  renderSaveSlots(mode);
+  saveScreen.classList.add("visible");
+}
+
+document.getElementById("save-close-btn").addEventListener("click", () => {
+  saveScreen.classList.remove("visible");
+});
+
+function renderSaveSlots(mode) {
+  const container = document.getElementById("save-slots");
+  container.innerHTML = "";
+  const summaries = SaveManager.getAllSlotSummaries();
+
+  for (let i = 1; i <= SaveManager.MAX_SLOTS; i++) {
+    const info = summaries[i];
+    const slot = document.createElement("div");
+    slot.className = "save-slot";
+
+    const num = document.createElement("div");
+    num.className   = "save-slot-num";
+    num.textContent = i;
+
+    const infoEl = document.createElement("div");
+    infoEl.className = "save-slot-info";
+
+    if (info) {
+      const dt = new Date(info.savedAt);
+      const dtStr = `${dt.getFullYear()}/${dt.getMonth()+1}/${dt.getDate()} `
+                  + `${dt.getHours()}:${String(dt.getMinutes()).padStart(2,"0")}`;
+      infoEl.innerHTML =
+        `<div>${info.playerName}</div>` +
+        `<div>シーン: ${sceneIdToChapterName(info.sceneId)} &nbsp;|&nbsp; 社会信用度: ${info.socialCredit}</div>` +
+        `<div style="font-size:0.72rem;opacity:0.6;">${dtStr}</div>`;
+    } else {
+      infoEl.innerHTML = `<span class="slot-empty">—— 空のスロット ——</span>`;
+    }
+
+    slot.appendChild(num);
+    slot.appendChild(infoEl);
+    container.appendChild(slot);
+
+    slot.addEventListener("click", () => {
+      if (mode === "save") {
+        if (confirm(`スロット ${i} にセーブしますか？`)) {
+          const ok = SaveManager.save(i, GameState);
+          renderer.showMessage(ok ? `スロット ${i} にセーブしました` : "セーブに失敗しました");
+          saveScreen.classList.remove("visible");
+        }
+      } else {
+        // ロード
+        const data = SaveManager.load(i);
+        if (!data) { renderer.showMessage("セーブデータがありません"); return; }
+        if (confirm(`スロット ${i} からロードしますか？`)) {
+          saveScreen.classList.remove("visible");
+          hideTitle();
+          engine.resumeGame(data).then(() => {
+            renderer.updateHUD(GameState);
+          });
+        }
+      }
+    });
+  }
+}
+
+// ==========================================
+//  起動処理
+// ==========================================
+(async function init() {
+  try {
+    await loadCharacters();
+    initInstances();
+
+    // タイトル画面の背景をセット
+    renderer.setBackground("bg_main");
+
+    // "つづきから"ボタンの有効/無効
+    const hasSave = [1,2,3].some(i => SaveManager.hasSave(i));
+    document.getElementById("btn-continue").style.opacity = hasSave ? "1" : "0.4";
+
+    showTitle();
+  } catch(e) {
+    console.error("Initialization failed:", e);
+    document.body.innerHTML =
+      `<div style="color:#f88;padding:40px;font-family:monospace;">
+        <h2>初期化エラー</h2>
+        <p>${e.message}</p>
+        <p style="opacity:0.6;font-size:0.85em;">
+          ※ ローカルファイルで開く場合はブラウザの設定で
+          "ファイルURLからのアクセスを許可" が必要です。<br>
+          または簡易HTTPサーバー（例: python -m http.server 8080）経由で開いてください。
+        </p>
+      </div>`;
+  }
+})();
+</script>
+
+</body>
+</html>

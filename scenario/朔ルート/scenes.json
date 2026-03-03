@@ -1,0 +1,677 @@
+[
+  {
+    "id": "error_000",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "夜。申告期限まで、あと一日。",
+      "FATESのフォームを、何度も開いて、閉じた。",
+      "",
+      "候補者の欄に、その名前があった。",
+      "——{黒瀬 朔|くろせ さく}。スコア：0%。",
+      "エラーコードが、名前の横に並んでいる。",
+      "",
+      "0%。",
+      "だれもそこを選ばない。選ぶ理由がない。",
+      "",
+      "——わかってる。",
+      "それでも指が、動いた。"
+    ],
+    "effect": "fade_in",
+    "auto_next": "error_001",
+    "choices": []
+  },
+  {
+    "id": "error_001",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "FATESが弾き出した答えは——{黒瀬 朔|くろせ さく}。",
+      "相性スコア：0%。",
+      "",
+      "エラーコードのついた、その名前。",
+      "——なのに、私の心は、その名前から離れなかった。"
+    ],
+    "effect": null,
+    "auto_next": "error_002",
+    "choices": []
+  },
+  {
+    "id": "error_002",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "施設でのバイト中——",
+      "上司が席を外した隙に、端末の画面が目に入った。",
+      "",
+      "「黒瀬 朔」",
+      "",
+      "名前の横に、見慣れないアイコン。",
+      "鍵のマーク。そして——「データ不完全」の文字。"
+    ],
+    "effect": null,
+    "auto_next": "error_003",
+    "choices": []
+  },
+  {
+    "id": "error_003",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "「……データ、不完全？」",
+      "",
+      "0%の理由が、FATESの欠陥ではないとしたら。",
+      "朔の「データ」自体が——不完全だとしたら。",
+      "",
+      "画面を閉じる前に、一つだけ見えた。",
+      "「登録：仮」"
+    ],
+    "effect": null,
+    "auto_next": "error_004",
+    "choices": []
+  },
+  {
+    "id": "error_004",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "翌日——施設の非常階段。",
+      "朔が、窓の外を見ていた。",
+      "",
+      "「……また、お前か」"
+    ],
+    "effect": "fade_in",
+    "auto_next": "error_005",
+    "choices": []
+  },
+  {
+    "id": "error_005",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "「聞いていい？」",
+      "",
+      "朔が振り向かずに答えた。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「昨日、あなたの名前を端末で見た」",
+        "next_scene": "error_006a",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 2, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……なんで、ここにいるの？」",
+        "next_scene": "error_006b",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 1, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "error_006a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "朔の肩が、わずかに強張った。",
+      "「……見たのか」",
+      "「忘れろ」"
+    ],
+    "effect": null,
+    "auto_next": "error_007",
+    "choices": []
+  },
+  {
+    "id": "error_006b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……俺には、行く場所がない。",
+      "　ここが、一番静かだから」",
+      "「それだけだ」"
+    ],
+    "effect": null,
+    "auto_next": "error_007",
+    "choices": []
+  },
+  {
+    "id": "error_007",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「——なんで、お前は俺に関わろうとする」",
+      "",
+      "「0%だろう。FATESが言ってる。",
+      "　俺には、誰かと関わる必要がない。",
+      "　……俺自身も、そう思ってる」"
+    ],
+    "effect": null,
+    "auto_next": "error_008",
+    "choices": []
+  },
+  {
+    "id": "error_008",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "「FATESが言ってる、だけじゃないんですか？」",
+      "",
+      "朔が、初めてこちらを向いた。",
+      "目が、じっと私を見ている。"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「あなた自身は——どう思ってるの？」",
+        "next_scene": "error_009a",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 3, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……私は、そう思わない」",
+        "next_scene": "error_009b",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 2, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "error_009a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "長い沈黙。",
+      "「……俺が思うかどうか、関係ない。",
+      "　そういうことになってる。それだけだ」"
+    ],
+    "effect": null,
+    "auto_next": "error_010",
+    "choices": []
+  },
+  {
+    "id": "error_009b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……お前が思おうが思わまいが、俺には関係ない」",
+      "",
+      "でも——声が、少し揺れていた。"
+    ],
+    "effect": null,
+    "auto_next": "error_010",
+    "choices": []
+  },
+  {
+    "id": "error_010",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "施設の旧倉庫——。",
+      "書類整理を頼まれて一人で入ったところ、扉が閉まった。",
+      "鍵が外からかかってしまった。",
+      "",
+      "振り返ると、同じく閉じ込められた朔がいた。"
+    ],
+    "effect": null,
+    "auto_next": "error_011",
+    "choices": []
+  },
+  {
+    "id": "error_011",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……ついてない」",
+      "",
+      "朔が壁に背中を預けた。",
+      "「誰か来るまで、動くな。無駄に体力使うな」"
+    ],
+    "effect": null,
+    "auto_next": "error_012",
+    "choices": []
+  },
+  {
+    "id": "error_012",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "薄暗い倉庫の中。",
+      "静かすぎて、お互いの呼吸が聞こえる。",
+      "",
+      "「……朔さん、昔のこと——聞いていい？」"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「どうして、FATESのデータが不完全なの？」",
+        "next_scene": "error_013a",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 2, "op": "add" }
+        ]
+      },
+      {
+        "label": "「……家族のこと、教えてほしい」",
+        "next_scene": "error_013b",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 3, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "error_013a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……」",
+      "",
+      "朔が、少し考えてから。",
+      "「……義務教育の途中で、引っ越した。色々あって、登録が途切れた。",
+      "　それだけだ」"
+    ],
+    "effect": null,
+    "auto_next": "error_014",
+    "choices": []
+  },
+  {
+    "id": "error_013b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……家族の話は、しない」",
+      "",
+      "でも——拒絶の言葉の中に、かすかな痛みが見えた気がした。"
+    ],
+    "effect": null,
+    "auto_next": "error_014",
+    "choices": []
+  },
+  {
+    "id": "error_014",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「——FATESが0%って言うのは、単純な話だ。",
+      "　データが薄いから、計算できない。",
+      "　計算できないから、0%になる。それだけだ」",
+      "",
+      "「俺は——最初から、誰かに関わる気はなかった」"
+    ],
+    "effect": null,
+    "auto_next": "error_015",
+    "choices": []
+  },
+  {
+    "id": "error_015",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "「……でも、ここに来てる」",
+      "「施設に、来てる」",
+      "",
+      "朔が、黙った。",
+      "しばらくして——「うるさい」とだけ言った。"
+    ],
+    "effect": null,
+    "auto_next": "error_016",
+    "choices": []
+  },
+  {
+    "id": "error_016",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "施設の夜——。",
+      "帰り際、非常口の外に朔がいた。",
+      "電話をしていた。",
+      "",
+      "声は聞こえない。",
+      "でも——表情が、いつもと全く違った。"
+    ],
+    "effect": null,
+    "auto_next": "error_017",
+    "choices": []
+  },
+  {
+    "id": "error_017",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "電話を終えた朔が、振り返って私に気づいた。",
+      "",
+      "「……見てたのか」",
+      "「誰と話してたか、聞くつもりか？」"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「……誰ですか？」",
+        "next_scene": "error_018a",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 2, "op": "add" }
+        ]
+      },
+      {
+        "label": "「聞かない。でも——大事な人でしょ？」",
+        "next_scene": "error_018b",
+        "effects": [
+          { "type": "affection", "target": "error", "value": 3, "op": "add" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "error_018a",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……関係ない」",
+      "",
+      "でも、その声は——いつもより、少し柔らかかった。"
+    ],
+    "effect": null,
+    "auto_next": "error_019",
+    "choices": []
+  },
+  {
+    "id": "error_018b",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……」",
+      "",
+      "朔が、少し驚いたような顔をした。",
+      "「……まあ、昔から知ってる人だ。それだけだ」"
+    ],
+    "effect": null,
+    "auto_next": "error_019",
+    "choices": []
+  },
+  {
+    "id": "error_019",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "数日後——。",
+      "上司が、少し困った顔をして私を呼んだ。",
+      "",
+      "「ちょっと話せる？　黒瀬くんのことで、ね」"
+    ],
+    "effect": "fade_in",
+    "auto_next": "error_020",
+    "choices": []
+  },
+  {
+    "id": "error_020",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": "上司",
+    "text": [
+      "「……あの子のこと、少し話していいかしら。",
+      "　FATESの登録データが——仮登録なの。",
+      "　ずっと前に、私が申請した」"
+    ],
+    "effect": null,
+    "auto_next": "error_021",
+    "choices": []
+  },
+  {
+    "id": "error_021",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": "上司",
+    "text": [
+      "「あの子が小さい頃、事情があってFATESの管理から外れた。",
+      "　でも——誰かが気にかけてあげないといけないと思って。",
+      "　本人には、内緒のままにしてた」",
+      "",
+      "「あなたに話すか、迷ったんだけど。",
+      "　——伝えるかどうか、あなたに任せたい」"
+    ],
+    "effect": null,
+    "auto_next": "error_022",
+    "choices": []
+  },
+  {
+    "id": "error_022",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "「誰かが——ずっと、お前のことを気にかけていた」",
+      "",
+      "朔は、知らない。",
+      "誰かが、陰からずっと——彼のことを見ていたことを。",
+      "",
+      "私は——どうすれば、いい？"
+    ],
+    "effect": null,
+    "choices": [
+      {
+        "label": "「……朔さんに、伝える」",
+        "next_scene": "error_true_001"
+      },
+      {
+        "label": "「伝えない。制度の外で一緒に生きる」",
+        "next_scene": "error_secret_001"
+      },
+      {
+        "label": "「まだ、決められない」",
+        "next_scene": "error_bad_001"
+      }
+    ]
+  },
+  {
+    "id": "error_true_001",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "非常階段——いつもの場所に朔がいた。",
+      "",
+      "「……朔さん、聞いてほしいことがある」"
+    ],
+    "effect": null,
+    "auto_next": "error_true_002",
+    "choices": []
+  },
+  {
+    "id": "error_true_002",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "全部、話した。",
+      "仮登録のこと。",
+      "上司が、ずっと気にかけていたこと。",
+      "",
+      "朔は——黙って聞いていた。"
+    ],
+    "effect": null,
+    "auto_next": "error_true_003",
+    "choices": []
+  },
+  {
+    "id": "error_true_003",
+    "background": "still_error_true",
+    "characters": [{ "character_id": "saku", "sprite": "smile", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……」",
+      "",
+      "長い沈黙の後——朔の目から、何かが零れた。",
+      "",
+      "「……知らなかった」",
+      "「俺のことを、気にかけてる人がいたなんて」"
+    ],
+    "effect": null,
+    "auto_next": "error_true_004",
+    "choices": []
+  },
+  {
+    "id": "error_true_004",
+    "background": "still_error_true",
+    "characters": [{ "character_id": "saku", "sprite": "smile", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "朔が、初めて笑った。",
+      "「……お前も、そうだったのか？",
+      "　ずっと——俺のことを」",
+      "",
+      "「0%？　それでも——俺は君を選ぶ」"
+    ],
+    "effect": null,
+    "auto_next": "error_true_005",
+    "choices": []
+  },
+  {
+    "id": "error_true_005",
+    "background": "still_error_true",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "True End：「0%の向こう側」",
+      "",
+      "FATESが弾き出した0%。",
+      "でも——ここに、確かに存在している人がいる。",
+      "誰かに必要とされ、誰かを必要としている。",
+      "",
+      "それは、どんな数字よりも——本物だと思った。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "error_secret_001",
+    "background": "bg_main",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "「——朔さん」",
+      "",
+      "「FATESの話じゃなくて。私の話をしていい？",
+      "　あなたのそばにいたい、って——それだけ」"
+    ],
+    "effect": null,
+    "auto_next": "error_secret_002",
+    "choices": []
+  },
+  {
+    "id": "error_secret_002",
+    "background": "still_error_secret",
+    "characters": [{ "character_id": "saku", "sprite": "smile", "position": "center" }],
+    "speaker": "黒瀬 朔",
+    "text": [
+      "「……制度の外、か」",
+      "",
+      "朔が、かすかに笑った。",
+      "「——迷惑なやつだな」",
+      "「……でも、悪くない」"
+    ],
+    "effect": null,
+    "auto_next": "error_secret_003",
+    "choices": []
+  },
+  {
+    "id": "error_secret_003",
+    "background": "still_error_secret",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "Secret End：「登録なんていらない」",
+      "",
+      "FATESに名前がなくても。",
+      "誰かの記録に残らなくても。",
+      "",
+      "私の隣に——朔がいる。",
+      "それだけで、十分だった。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  },
+  {
+    "id": "error_bad_001",
+    "background": "bg_main",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "迷っている間に——時間が経った。",
+      "",
+      "施設に、制度管理局の職員が来た。",
+      "「黒瀬朔氏の登録データに不備があります。確認のため、同行をお願いします」"
+    ],
+    "effect": null,
+    "auto_next": "error_bad_002",
+    "choices": []
+  },
+  {
+    "id": "error_bad_002",
+    "background": "still_error_bad",
+    "characters": [{ "character_id": "saku", "sprite": "normal", "position": "center" }],
+    "speaker": null,
+    "text": [
+      "朔が、職員に連れられていく。",
+      "振り返った朔の目は——何も言っていなかった。",
+      "",
+      "私は、何もできなかった。"
+    ],
+    "effect": null,
+    "auto_next": "error_bad_003",
+    "choices": []
+  },
+  {
+    "id": "error_bad_003",
+    "background": "still_error_bad",
+    "characters": [],
+    "speaker": null,
+    "text": [
+      "Bad End：「記録の外で」",
+      "",
+      "——伝えるべきだった。",
+      "迷わずに、伝えるべきだった。",
+      "",
+      "記録に残らない人を——",
+      "私は、記憶する。",
+      "",
+      "——　FINI"
+    ],
+    "effect": "fade_out",
+    "auto_next": null,
+    "choices": []
+  }
+]
