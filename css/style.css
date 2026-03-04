@@ -893,8 +893,8 @@ html, body {
   /* 立ち絵スロット：全て中央・拡大表示 */
   .char-slot {
     width:  100vw;
-    height: calc(100vh - 290px);
-    height: calc(100dvh - 290px);
+    height: calc(100vh - 220px);
+    height: calc(100dvh - 220px);
   }
 
   #char-left {
@@ -913,9 +913,9 @@ html, body {
     transform: translateX(-50%);
   }
 
-  /* テキストボックス：高さを拡大して文章が切れないように */
+  /* テキストボックス：高さ調整 */
   #text-box {
-    height: 290px;
+    height: 220px;
     padding: 14px 18px max(20px, env(safe-area-inset-bottom));
   }
 
