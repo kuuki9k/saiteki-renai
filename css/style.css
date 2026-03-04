@@ -890,16 +890,28 @@ html, body {
     transform: none;
   }
 
-  /* 立ち絵スロット：縦画面向けサイズ */
+  /* 立ち絵スロット：全て中央・拡大表示 */
   .char-slot {
-    width:  52vw;
+    width:  100vw;
     height: calc(100vh - 170px);
     height: calc(100dvh - 170px);
   }
 
-  #char-left   { left: -6vw; }
-  #char-center { left: 50%; transform: translateX(-50%); }
-  #char-right  { right: -6vw; }
+  #char-left {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #char-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #char-right {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   /* テキストボックス：パディング微調整 */
   #text-box {
