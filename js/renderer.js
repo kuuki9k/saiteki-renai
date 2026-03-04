@@ -36,19 +36,23 @@ class Renderer {
   // ========== 背景 ==========
 
   setBackground(bgKey) {
+    // スマホ縦画面判定（CSSのメディアクエリと同じ条件）
+    const isPortrait = window.innerWidth <= 767 && window.innerWidth < window.innerHeight;
+    const stillDir = isPortrait ? "イラスト/縦画面スチル" : "イラスト/スチル";
+
     const stillMap = {
-      "still_reo_true":    "イラスト/スチル/玲央trueend.jpg",
-      "still_reo_happy":   "イラスト/スチル/玲央happyend.jpg",
-      "still_reo_normal":  "イラスト/スチル/玲央normalend.jpg",
-      "still_cool_true":   "イラスト/スチル/湊trueend.jpg",
-      "still_cool_happy":  "イラスト/スチル/湊happyend.jpg",
-      "still_cool_bitter": "イラスト/スチル/湊bitterend.jpg",
-      "still_error_true":  "イラスト/スチル/朔trueend.jpg",
-      "still_error_secret":"イラスト/スチル/朔secretend.jpg",
-      "still_error_bad":   "イラスト/スチル/朔badend.jpg",
-      "still_yuma_true":   "イラスト/スチル/悠真trueend.jpg",
-      "still_yuma_happy":  "イラスト/スチル/悠真happyend.jpg",
-      "still_yuma_friend": "イラスト/スチル/悠真friendshipend.jpg",
+      "still_reo_true":    `${stillDir}/玲央trueend.jpg`,
+      "still_reo_happy":   `${stillDir}/玲央happyend.jpg`,
+      "still_reo_normal":  `${stillDir}/玲央normalend.jpg`,
+      "still_cool_true":   `${stillDir}/湊trueend.jpg`,
+      "still_cool_happy":  `${stillDir}/湊happyend.jpg`,
+      "still_cool_bitter": `${stillDir}/湊bitterend.jpg`,
+      "still_error_true":  `${stillDir}/朔trueend.jpg`,
+      "still_error_secret":`${stillDir}/朔secretend.jpg`,
+      "still_error_bad":   `${stillDir}/朔badend.jpg`,
+      "still_yuma_true":   `${stillDir}/悠真trueend.jpg`,
+      "still_yuma_happy":  `${stillDir}/悠真happyend.jpg`,
+      "still_yuma_friend": `${stillDir}/悠真friendshipend.jpg`,
     };
 
     if (bgKey === "bg_main") {
