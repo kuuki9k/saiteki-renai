@@ -893,8 +893,9 @@ html, body {
   /* 立ち絵スロット：全て中央・拡大表示 */
   .char-slot {
     width:  100vw;
-    height: calc(100vh - 220px);
-    height: calc(100dvh - 220px);
+    height: calc(100vh - 200px);
+    height: calc(100dvh - 200px);
+    overflow: visible;
   }
 
   #char-left {
@@ -913,9 +914,17 @@ html, body {
     transform: translateX(-50%);
   }
 
+  /* 立ち絵画像：幅100%で拡大、高さは自動（顔が上方に来る） */
+  .char-slot img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: unset !important;
+  }
+
   /* テキストボックス：高さ調整 */
   #text-box {
-    height: 220px;
+    height: 200px;
     padding: 14px 18px max(20px, env(safe-area-inset-bottom));
   }
 
