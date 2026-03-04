@@ -914,13 +914,14 @@ html, body {
     transform: translateX(-50%);
   }
 
-  /* 立ち絵画像：スロット内に収まりつつ最大化（顔が上方に来る） */
+  /* 立ち絵画像：頭頂部が画面上1/4に来るよう高さを75dvhに固定 */
   .char-slot img {
     width: auto !important;
-    height: auto !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: contain !important;
+    height: 75vh !important;
+    height: 75dvh !important;
+    max-width: 100vw !important;
+    max-height: none !important;
+    object-fit: unset !important;
   }
 
   /* テキストボックス：高さ調整 */
